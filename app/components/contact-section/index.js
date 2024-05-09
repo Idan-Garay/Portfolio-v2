@@ -7,7 +7,7 @@ import { useInView } from "framer-motion";
 
 export const ContactSection = () => {
   const ref = useRef();
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
   const animationStyle = {
     transition: "all 0.8s",
     opacity: isInView ? 1 : 0,
@@ -45,7 +45,7 @@ export const ContactSection = () => {
             position: "relative",
           }}
         >
-          <Link  href="#heroSection">
+          <Link href="#heroSection">
             <Image
               src="/white-logo.svg"
               alt="logo"
@@ -55,21 +55,24 @@ export const ContactSection = () => {
           </Link>
         </div>
         <ul>
-          <Link style={{ ...animationStyle, transitionDelay: "0.5s" }}
+          <Link
+            style={{ ...animationStyle, transitionDelay: "0.5s" }}
             target="_blank"
             className={styles.link}
             href="https://www.linkedin.com/in/idan-joshua-garay"
           >
             Linkedin
           </Link>
-          <Link style={{ ...animationStyle, transitionDelay: "0.6s" }}
+          <Link
+            style={{ ...animationStyle, transitionDelay: "0.6s" }}
             target="_blank"
             className={styles.link}
             href="https://github.com/Idan-Garay"
           >
             GitHub
           </Link>
-          <Link style={{ ...animationStyle, transitionDelay: "0.7s" }}
+          <Link
+            style={{ ...animationStyle, transitionDelay: "0.7s" }}
             target="_blank"
             className={styles.link}
             href="https://twitter.com/GarayIdan"

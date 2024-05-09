@@ -12,7 +12,13 @@ export const HeroSection = () => {
 
   return (
     <section id="heroSection" className={styles.heroSection}>
-      <div style={{ position: "absolute", width: "85%", top: "3%" }}>
+      <div
+        style={{
+          position: "absolute",
+          width: "85%",
+          top: "3%",
+        }}
+      >
         <nav className={styles.nav}>
           <Link href="/">
             <div className={styles.blackLogo}>

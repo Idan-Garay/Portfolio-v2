@@ -87,10 +87,9 @@ body {
   scroll-behavior: smooth;
 }
 
-body>section {
+body > section {
   height: 100dvh;
   padding: 0 7%;
   scroll-snap-align: start;
-  max-width: 1440px;
   min-width: 320px;
 }
