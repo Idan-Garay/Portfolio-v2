@@ -40,7 +40,7 @@ export const AboutSection = () => {
             </h5>
           </div>
           <p className={styles.p} style={rightToLeft}>
-            Almost 2 years of work experience as a front-end, and full-stack
+            Having a years of work experience as a front-end, and full-stack
             developer
           </p>
 
